@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/employees.js": {
+      "includeFiles": "mock/db.json"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/employees" }
+  ],
+  "outputDirectory": "build"
+}
